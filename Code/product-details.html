@@ -22,15 +22,30 @@
                     <li><a href="">Account</a></li>
                 </ul>
             </nav>
-            <img src="C:\Users\HP\Downloads\Muslimah\E-commerce Website\images\benz.png" alt="" width="30px" height="30px">
-            <img src="C:\Users\HP\Downloads\Muslimah\E-commerce Website\images\toyota.png" class="menu-icon" onclick="menutoggle()" alt="">
+            <img src="images\benz.png" alt="" width="30px" height="30px">
+            <img src="images\toyota.png" class="menu-icon" onclick="menutoggle()" alt="">
         </div>
     </div>
    <!--single product details -->
         <div class="small-container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="C:\Users\HP\Downloads\Muslimah\E-commerce Website\images\kt-10.jpg" width="100%">
+                    <img src="images\kt-10.jpg" width="100%" id="ProductImg">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/kt-1.jpg" width="100%" alt="" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/kt-2.jpg" width="100%" alt="" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/kt-3.jpg" width="100%" alt="" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/kt-10.jpg" width="100%" alt="" class="small-img">
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-2">
                     <p>Home / Grater</p>
@@ -44,16 +59,23 @@
                     </select>
                     <input type="number" name="" value="1">
                     <a href="" class="btn">Add to Cart</a>
-                    <h3>Product Details</h3>
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
                     <p>A sign in attempt requires further verification because we did not recognize your device. To complete the sign in, enter the verification code on the unrecognized device.</p>
                 </div>
             </div>
         </div>
-
+<!------title------>
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+<!-------products-------->
    <div class="small-container">
            <div class="row">
                <div class="col-4">
-                   <img src="C:\Users\HP\Downloads\Muslimah\E-commerce Website\images\kt-6.jpg" alt="">
+                   <img src="images\kt-6.jpg" alt="">
                    <h4>Insulated Serving Dish Hot Pot</h4>
                    <div class="rating">
                         <i class="fa fa-star"></i>
@@ -65,7 +87,7 @@
                    <p>$15.00</p>
                </div>
                <div class="col-4">
-                <img src="C:\Users\HP\Downloads\Muslimah\E-commerce Website\images\kt-7.jpg" alt="">
+                <img src="images\kt-7.jpg" alt="">
                 <h4>Large Over Sink Dish Drying Rack & Kitchen Holder Shelf</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -76,7 +98,7 @@
                 </div>
                 <p>$25.35</p>
                 </div>
-               <div class="col-4"><img src="C:\Users\HP\Downloads\Muslimah\E-commerce Website\images\kt-8.jpg" alt="">
+               <div class="col-4"><img src="images\kt-8.jpg" alt="">
                 <h4>4pcs/set Gas Stove Reusable Protection Pad For Gas Burners</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -87,7 +109,7 @@
                 </div>
                 <p>$15.79</p>
                 </div>
-               <div class="col-4"><img src="C:\Users\HP\Downloads\Muslimah\E-commerce Website\images\kt-20.jpg" alt="">
+               <div class="col-4"><img src="images\kt-20.jpg" alt="">
                     <h4>Set of Wooden Spoons</h4>
                     <div class="rating">
                         <i class="fa fa-star"></i>
@@ -115,7 +137,7 @@
                             </div>
                         </div>
                         <div class="footer-col-2">
-                            <img src="C:\Users\HP\Downloads\Muslimah\E-commerce Website\images\chef-cap.png" alt="" >
+                            <img src="images\chef-cap.png" alt="" >
                             <p>The purpose of this business</p>
                         </div>
                         <div class="footer-col-3">
@@ -155,6 +177,28 @@
                 }    
             }
 
+        </script>
+        <!-- -----js for product gallery ----- -->
+        <script>
+            var ProductImg = document.getElementById("ProductImg");
+            var SmallImg= document.getElementsByClassName("small-img");
+
+                SmallImg[0].onclick = function()
+                {
+                    ProductImg.src= SmallImg[0].src;
+                }
+                SmallImg[1].onclick = function()
+                {
+                    ProductImg.src= SmallImg[1].src;
+                }
+                SmallImg[2].onclick = function()
+                {
+                    ProductImg.src= SmallImg[2].src;
+                }
+                SmallImg[3].onclick = function()
+                {
+                    ProductImg.src= SmallImg[3].src;
+                }
         </script>
 
 
